@@ -1,0 +1,16 @@
+
+is_String_pallindrome:
+
+     ------>Use to check whether a String is Pallindrome or not.
+     
+     ------>It returns 0 if it's not a pallindrome else 1.
+     
+string_shortestPalindrome:
+
+     ------>Function to find the shortest palindrome by adding characters in front of the given string
+     
+     ------>Check if the entire string is already a palindrome (return original String).
+     
+     ------>Find the length of the longest palindrome prefix.
+     
+     ------>Create a new string with the reverse of the remaining part added to the beginning.
