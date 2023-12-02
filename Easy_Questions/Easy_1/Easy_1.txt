@@ -1,0 +1,18 @@
+
+int Length_Of_Last_Word(char *); - Used to calculate the length of the  Last word in the sentence;
+
+
+ function--->int Length_Of_Last_Word(char *s) 
+
+ ----> Function  Length_Of_Last_Word that takes a character array (char *s) as a parameter and returns an integer.
+
+ ----> int length = 0;: Initializes a variable length to store the length of the last word.
+
+ ----> int i = strlen(s) - 1;: Initializes a variable i to the index of the last character in the string s.
+
+ ----> while (i >= 0 && s[i] == ' ') { i--; }: Moves the index i to the last non-space character in the string.
+
+ ----> while (i >= 0 && s[i] != ' ') { length++; i--; }: Calculates the length of the last word by counting characters until a space is encountered 
+                                                          or the beginning of the string is reached.
+
+ ----> return length;: Returns the calculated length of the last word.
