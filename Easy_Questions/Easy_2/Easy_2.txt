@@ -1,0 +1,39 @@
+
+struct TreeNode: 
+
+------>Represents a binary tree node with three fields - val (the value of the node), 
+       left (pointer to the left child), and right (pointer to the right child).
+       
+       
+       
+sortedArrayToBST: 
+
+------>Function to convert a sorted array into a height-balanced Binary Search Tree (BST). It uses a recursive approach.
+
+Parameters:
+------>nums: The sorted array.
+------>start: The starting index of the current subarray.
+------>end: The ending index of the current subarray.
+------>Base case: If start is greater than end, return NULL.
+------>Find the middle index mid of the current subarray.
+------>Create a new node with the value at index mid as the root.
+------>Recursively build the left subtree with the subarray from start to mid - 1.
+------>Recursively build the right subtree with the subarray from mid + 1 to end.
+------>Return the root of the constructed subtree.
+
+
+
+inorderTraversal: 
+
+------>Function to perform an inorder traversal of the BST (used for verification).
+
+Parameters:
+------>root: The root of the BST.
+------>Recursively traverses the left subtree, prints the value of the current node, and then recursively traverses the right subtree.
+
+
+
+Example 1:
+
+------>Creates a sorted array nums1 and calls sortedArrayToBST to convert it into a height-balanced BST.
+------>Prints the inorder traversal of the resulting BST.
