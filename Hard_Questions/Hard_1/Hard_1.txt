@@ -1,0 +1,26 @@
+
+Deque Node and Deque Structure:
+
+------->The code starts by defining a DequeNode structure to represent a node in the deque. Each node has a value (the actual value from the array) 
+        and an index (the index of that value in the array).
+        The Deque structure is defined to represent the deque itself.
+         It contains an array of DequeNode elements,along with pointers to the front and rear elements of the deque, and the capacity of the deque.
+         
+         
+Deque Functions:
+
+------->createDeque: Allocates memory for a deque, initializes it, and returns a pointer to the deque.
+------->isEmpty: Checks if the deque is empty.
+------->pushFront and pushRear: Add elements to the front and rear of the deque, respectively.
+------->popFront and popRear: Remove elements from the front and rear of the deque, respectively.
+------->frontValue: Retrieve the value of the front element of the deque.
+
+
+maxSlidingWindow Function:
+
+------->Takes an array nums, its size numsSize, the window size k, and a pointer to an integer (returnSize) to store the size of the result array.
+------->Creates a deque to efficiently maintain the maximum elements in the sliding window.
+------->Iterates through the array, updating the deque and calculating the maximum values for each sliding window.
+------->Allocates memory for the result array and returns it.
+
+
