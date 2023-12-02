@@ -1,0 +1,31 @@
+
+int** generatePascalsTriangle(int numRows, int* returnSize, int** returnColumnSizes) {
+    *returnSize = numRows;
+    ------->This function generates Pascal's Triangle up to the specified number of rows. It returns the triangle as a 2D array, 
+             and it also provides the size of the result and the sizes of each row through pointers.
+             
+             
+             
+ for (int j = 1; j < i; j++) {
+            result[i][j] = result[i - 1][j - 1] + result[i - 1][j];
+        }
+    }
+    -------->Calculate the middle elements of each row based on the values above them in the previous row.
+    
+    
+    
+ void printPascalsTriangle(int** triangle, int numRows, int* columnSizes) 
+    -------->Prinths the Pascal's triangle elements.This function prints Pascal's Triangle. 
+             It takes the 2D array triangle, the number of rows numRows, and the sizes of each row columnSizes.
+             
+             
+             
+ main()
+    -------->Main program is used to input the details.
+    -------->Input: Number of rows in Pascal's Triangle.
+    -------->Generate Pascal's Triangle and get the result.
+    -------->Print Pascal's Triangle
+    --------> Free allocated memory
+    
+    
+   
