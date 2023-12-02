@@ -1,0 +1,21 @@
+
+R: Number of rows in the matrix.
+C: Number of columns in the matrix.
+
+------>The idea is to construct a matrix S where S[i][j] represents the size of the largest square ending at cell (i, j) and having all 1s.
+
+printMaxSubSquare:
+
+------>Takes a boolean matrix M as input.
+------>Constructs a new matrix S where each entry S[i][j] represents the size of the largest square ending at cell (i, j) and having all 1s.
+------>Finds the maximum entry in S to determine the size of the largest square and the corresponding indexes (max_i, max_j) where the square ends.
+------>Prints the size of the maximum square submatrix (2 times the size) and the submatrix itself.
+
+
+main:
+
+------>Defines a boolean matrix M representing a binary matrix.
+------>Calls the printMaxSubSquare function to find and print the maximum square submatrix
+
+
+
