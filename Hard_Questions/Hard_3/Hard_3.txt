@@ -1,0 +1,16 @@
+Code
+    ------>countDigitOne that calculates the count of digit 1 occurrences in numbers from 1 to a given positive integer n.
+           The program then takes user input for n and prints the result of the countDigitOne function.
+           
+           
+           
+    ------>   counts the number of one's
+    
+    ------>   Enter the value of integer
+    
+    ------>   We have to check Integer is less than 109 and greater than 0.
+              If it is greater than 109 reēnter the integer.
+              
+    ------>   Print the output
+           
+           
