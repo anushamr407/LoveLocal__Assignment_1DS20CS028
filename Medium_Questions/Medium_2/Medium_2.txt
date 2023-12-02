@@ -1,0 +1,16 @@
+int* FindNumber(int* nums, int numsSize, int* returnSize)
+   ------>The function FindNumber takes three parameters: nums (an array of integers), numsSize (the size of the array)
+          and returnSize (a pointer to an integer representing the size of the output array). The function initializes 
+          *returnSize to 0 and checks if the input array is empty or null. If it is, the function returns NULL.
+          
+          
+   ------>This is the first phase of the Boyer-Moore Majority Vote algorithm. It iterates through the array to find potential 
+          candidates for the majority elements. It maintains two candidates (candidate1 and candidate2) and two counters (count1 and count2).
+          If the current element is equal to either candidate, the  respective counter is incremented. If the counters are zero, the current
+          element becomes a new candidate with a counter set to 1. If the counters are not zero, both counters are decremented.
+          
+   ------>This is the second phase, where the algorithm counts the occurrences of the potential candidates identified in the first phase.
+   
+   
+   ------>Finally, the code checks if the identified candidates occur more than ⌊ n/3 ⌋ times. It allocates memory for the result array 
+          based on  the number of candidates found and returns an array containing the majority elements.
