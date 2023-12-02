@@ -1,0 +1,47 @@
+struct TreeNode: 
+
+------>Represents a binary tree node with three fields - val (the value of the node), 
+       left (pointer to the left child), and right (pointer to the right child).
+       
+       
+       
+lowestCommonAncestor: 
+
+------>Takes the root of a binary search tree (BST), and two nodes p and q. It returns the lowest common ancestor of nodes p and q in the BST.
+------>The function iteratively traverses the tree starting from the root.
+------>It compares the values of the current node with the values of p and q.
+------>If the current node's value is greater than both p and q, it means the LCA must be in the left subtree.
+------>If the current node's value is less than both p and q, it means the LCA must be in the right subtree.
+------>If the current node's value is between p and q, or it is equal to either p or q, then the current node is the LCA.
+
+
+newNode: 
+
+------>Takes an integer value and creates a new tree node with that value. It returns a pointer to the newly created node.
+
+
+
+Example 1:
+
+------>Constructs a BST with values [6,2,8,0,4,7,9,null,null,3,5].
+------>Creates nodes for p and q with values 2 and 8.
+------>Calls lowestCommonAncestor to find the LCA and prints the result.
+
+
+
+Example 2:
+
+------>Constructs a BST with values [6,2,8,0,4,7,9,null,null,3,5].
+------>Creates nodes for p and q with values 2 and 4.
+------>Calls lowestCommonAncestor to find the LCA and prints the result.
+
+
+
+Example 3:
+
+------>Constructs a BST with values [2,1].
+------>Creates nodes for p and q with values 2 and 1.
+------>Calls lowestCommonAncestor to find the LCA and prints the result.
+
+
+
